@@ -1,0 +1,379 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: 85px;
+}
+
+#banner {
+    background-image: url('https://pbs.twimg.com/media/FBwMEAMWQAA6BOO.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+ 
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;    
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://uploads.metropoles.com/wp-content/uploads/2022/02/18184106/Robert-Pattinson-Batman.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://s.aficionados.com.br/imagens/zoe-kravitz_cke.jpg');
+}
+
+.banner-3 {
+    background-image: url('https://cinepop.com.br/wp-content/uploads/2019/09/Jeffrey-Wright-Gordon-the-batman.jpg');
+}
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+span{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.paragrafo-comentario {
+    width: 1000px;
+    height: 600px;
+    margin: 150px 50px 50px 450px;
+    text-align: justify;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    
+}
+
+.footer-navigation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 1vw;
+}
+
+.gallery-items {
+    width: 340px;
+    height: 340px;
+    border: 10px solid #fff;
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transform .5s linear;
+}
+
+.gallery-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-items:hover {
+    transform: scale(1.05);
+}
+
+.formulario-contato {
+    width: 800px;
+    height: 600px;
+    display: flex;
+    margin: 100px 50px 50px 530px;
+}
+
+.formulario  .titulo { 
+
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  
+  }
+  
+  .formulario {
+     
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    overflow: hidden;
+    padding: 20px;
+  
+  
+  }
+  
+  :focus{outline: none;}
+  
+  .label { 
+  
+    float: left; 
+    width: 100%; 
+    margin-bottom: 25px; 
+    position: relative;
+  
+  }
+  
+  .input-bordas{
+    
+    font: 15px/24px "Lato", Arial, sans-serif; 
+    color: #fff; 
+    width: 100%; 
+    box-sizing: border-box; 
+    letter-spacing: 1px;
+    border: 1px solid #fff; 
+    padding: 7px 14px 9px; 
+    transition: 0.4s;
+  
+  }
+  
+  .textarea { resize:none!important; }
+  
+  .input-bordas ~ .focus-border:before,
+  .input-bordas ~ .focus-border:after{content: ""; position: absolute; top: 0; right: 0; width: 0; height: 2px; background-color: #3399FF; transition: 0.2s; transition-delay: 0.2s;}
+  .input-bordas ~ .focus-border:after{top: auto; bottom: 0; right: auto; left: 0; transition-delay: 0.6s;}
+  .input-bordas ~ .focus-border i:before,
+  .input-bordas ~ .focus-border i:after{content: ""; position: absolute; top: 0; left: 0; width: 2px; height: 0; background-color: #3399FF; transition: 0.2s;}
+  .input-bordas ~ .focus-border i:after{left: auto; right: 0; top: auto; bottom: 0; transition-delay: 0.4s;}
+  .input-bordas:focus ~ .focus-border:before,
+  .input-bordas:focus ~ .focus-border:after{width: 100%; transition: 0.2s; transition-delay: 0.6s;}
+  .input-bordas:focus ~ .focus-border:after{transition-delay: 0.2s;}
+  .input-bordas:focus ~ .focus-border i:before,
+  .input-bordas:focus ~ .focus-border i:after{height: 100%; transition: 0.2s;}
+  .input-bordas:focus ~ .focus-border i:after{transition-delay: 0.4s;}
+  
+  
+  .button-form { 
+  
+    background-color: #0006;
+    padding: 0.5em 1.3em;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+  
+  }
+  
+  .borda-inversa {
+  
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    box-shadow: inset 0 0 0 2px #0006, 0 0 1px rgba(0, 0, 0, 0);
+  
+  }
+  
+  .borda-inversa:hover, .borda-inversa:focus, .borda-inversa:active {
+    
+    background: none;
+    color:#0006; 
+  
+  }
+  
+  /*Anti-span*/
+  .naoexibir { display:none; }
